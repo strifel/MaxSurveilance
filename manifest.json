@@ -1,0 +1,12 @@
+{
+  "name": "MaxSurveillance",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Maximize Surveillance station streams",
+  "homepage_url": "https://github.com/strifel/MaxSurveillance",
+  "content_scripts": [{
+    "js": ["contentscript.js"],
+    "matches": ["http://*:5000/webman/3rdparty/SurveillanceStation/"]
+  }],
+  "web_accessible_resources": ["add_max.js"]
+}
